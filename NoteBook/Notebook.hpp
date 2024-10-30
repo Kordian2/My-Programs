@@ -6,9 +6,9 @@ class Notebook {
 private:
     std::vector<std::string> m_notes;
 public:
-    Notebook(std::vector<std::string> &notes):m_notes(notes){}
-    void displayNotebook(void){
-        for(int i = 1;i!=size(m_notes);i++){
+    
+    void display(void){
+        for(int i = 0;i<size(m_notes);i++){
             std::cout<<m_notes[i]<<std::endl;
         }
     }
